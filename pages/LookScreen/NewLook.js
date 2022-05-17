@@ -174,14 +174,13 @@ export default function NewLook(props) {
     function onClickCreateLook() {
 
 
-      //  console.log(data);
+        //  console.log(data);
         if (data.article.length > 0 && data.category.length > 0 && data.look.length > 0 && data.tag.length > 0) {
             dispatch(ReducerAction.addNewLookA(data));
             props.navigation.navigate("AllLock")
         }
-        else
-        {
-            Alert.alert("Warning","a field is empty")
+        else {
+            Alert.alert("Warning", "a field is empty")
         }
     }
 
